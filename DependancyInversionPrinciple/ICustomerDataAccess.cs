@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceSegregationPrinciple
+namespace DependancyInversionPrinciple
 {
-    class OperationManagement
+
+    public interface ICustomerDataAccess
     {
+        string GetCustomerName();
     }
 }
