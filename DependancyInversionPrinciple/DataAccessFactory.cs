@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DependancyInversionPrinciple
 {
-    class EmployeeDetails
+    public class DataAccessFactory
     {
+        public static ICustomerDataAccess GetCustomerDataAccessObj()
+        {
+            return new CustomerDataAccess();
+        }
     }
 }
