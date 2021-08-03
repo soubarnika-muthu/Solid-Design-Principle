@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregationPrinciple
 {
-    class IOperation
+    public interface IOrder
     {
-        //This interface has method only related to pay calculation
-        interface ISalaryCalculate
-        {
-            double NetPay(double basicPay);
-        }
+        void Purchase();
+    }
 
-        public interface IGetAccess
-        {
-            EmployeeDetails GetDetails();
-        }
+    public interface IOnlineOrder
+    {
+        void ProcessCreditCard();
     }
 }
