@@ -15,17 +15,17 @@ namespace LiskovSubstitutionPrinciple
 
         public class Rectangle : Shape
         {
-            public double Width { get; set; }
-            public double Height { get; set; }
+        public double Width = 10;
+        public double Height = 10;
             public override double Area()
             {
                 return Width * Height;
             }
         }
 
-        public class Circle : Shape
+        public class Circle : Rectangle
         {
-            public double Radius { get; set; }
+        public double Radius = 10;
             public override double Area()
             {
                 return Radius * Radius * Math.PI;
