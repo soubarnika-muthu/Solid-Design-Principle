@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LiskovSubstitutionPrinciple
 {
-   
-        public abstract class Shape
+    //LSP by having a generic base class for both Rectangle and Circle.
+    public abstract class Shape
         {
 
             public abstract double Area();
